@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bookmark</title>
+  <link rel="icon" href="./images/star_favorite_bookmark_prize_winner_icon_196878.webp" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+    rel="stylesheet">
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="./css/css/all.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <!-- styles -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div class="container py-5">
+    <header class="py-2 text-center mb-5">
+      <h1>Bookmarker</h1>
+    </header>
+    <div class="row d-flex flex-column justify-content-center align-items-center">
+      <div class="col-6-sm py-4 px-3">
+        <div class="bookmark-head text-center d-flex flex-row justify-content-center align-items-center pb-4">
+          <i class="fa-solid fa-bookmark"></i>
+          <h2 class="fw-medium px-2">Bookmark your favorite sites</h2>
+          <i class="fa-solid fa-bookmark"></i>
+        </div>
+        <div class="mb-3">
+          <i class="fa-solid fa-book-bookmark pe-2"></i> <label for="siteName" class="form-label fw-bold pb-1">Site
+            Name</label>
+          <input type="text" class="form-control" id="siteName" placeholder="Bookmark Name">
+        </div>
+        <div class="mb-3 mt-4">
+          <i class="fa-solid fa-link pe-2"></i> <label for="siteUrl" class="form-label fw-bold pb-1">Site URL</label>
+          <input type="url" class="form-control" id="siteUrl" placeholder="Website URL">
+          <p class="text-danger d-none">Enter a valid URL, starting with http:// or https://<span class="d-block">e.g.,
+              https://www.example.com</span></p>
+        </div>
+        <div class="text-center">
+          <button onclick="addSite()" class="btn btn-submit px-5 py-2">Submit</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <table class="bg-white mt-4 mb-3 row border-0">
+        <thead class="p-0">
+          <tr class="d-flex align-items-center justify-content-around border-bottom p-2">
+            <th class="text-capitalize ">index</th>
+            <th class="text-capitalize ">Website Name</th>
+            <th class="text-capitalize">Visit</th>
+            <th class="text-capitalize">Delete</th>
+          </tr>
+        </thead>
+        <tbody class="p-0" id="tableBody">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
